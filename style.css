@@ -32,7 +32,7 @@ main {
 }
 
 main .top-div {
-  max-width: 400px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   gap: 38px;
@@ -65,6 +65,19 @@ main .top-div {
   flex-direction: column;
   width: 100%;
   gap: 14px;
+}
+
+#form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#form div span {
+  text-align: center;
+  padding: 2px;
+  font-size: 12px;
+  font-style: italic;
+  color: red;
 }
 
 .top-div form input {
@@ -131,4 +144,73 @@ footer {
 footer p {
   color: var(--gray);
   font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 990px) {
+  main {
+    padding: 60px 40px 30px;
+  }
+
+  main .top-div {
+    gap: 28px;
+  }
+
+  .top-div figure img {
+    width: 70px;
+  }
+
+  .text h2 {
+    font-size: 2.4rem;
+  }
+
+  .text h2 span {
+    font-weight: 800;
+  }
+
+  .top-div form {
+    flex-direction: row;
+  }
+
+  #form div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  #form div span {
+    text-align: start;
+    padding: 2px 0px 2px 14px;
+  }
+
+  .top-div form input {
+    height: 42px;
+    width: 350px;
+    padding: 20px 32px;
+  }
+
+  .top-div form button {
+    padding: 13px 60px;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  main .bottom-div {
+    max-width: 620px;
+    gap: 100px;
+  }
+
+  .bottom-div ul li {
+    width: 36px;
+    height: 36px;
+  }
+
+  li svg {
+    width: 16px;
+    height: 16px;
+  }
 }
