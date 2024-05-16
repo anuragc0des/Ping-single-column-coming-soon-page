@@ -39,8 +39,15 @@
           <p>Subscribe and get notified</p>
         </div>
 
-        <form action="/">
-          <input type="text" placeholder="Your email address" id="emailInput" />
+        <form action="/" id="form">
+          <div>
+            <input
+              type="text"
+              placeholder="Your email address"
+              id="emailInput"
+            />
+            <span class="error-msg hidden"></span>
+          </div>
 
           <button type="submit">Notify Me</button>
         </form>
@@ -86,5 +93,7 @@
     <footer>
       <p>&copy; Copyright Ping. All rights reserved.</p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
